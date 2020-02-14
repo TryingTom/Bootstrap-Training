@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Task</title>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style type="text/css">
+    	ul > li{
+    		margin-left: 5px;
+    	}
+
+    	div > ul {
+			list-style-type: none;
+    	}
+
+    	li > button{
+    		margin: 5px;
+    	}
+
+    	#ClassInformation{
+    		font-style: bold;
+    	}
+
+    	#ListedCourses > div{
+    		margin: 5px;
+    		border-bottom: 1px solid grey;
+    	}
+    </style>
+</head>
+
+<body>
+
+<!--------------------------------------------------------------- Section one --------------------------------------------------------------->
+	<!-- Navigation bar -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-info bg-info">
+			<!-- Logo -->
+			<a href="#" class="navbar-img mb-2 mr-sm-2"><img src="http://portal.savonia.fi/img/amk/sisalto/_tutustu-savoniaan/viestintapalvelut/SAVONIA_logo_rgb.jpg" style="height: 2em"></a>
+
+			<!-- Left side of the navigation bar -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<!-- Contents -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<input type="text" name="username" class="nav-form mb-2 mr-sm-2" placeholder="username">
+					</li>
+					<li class="nav-item active">
+						<input type="password" name="password" class="nav-form mb-2 mr-sm-2" placeholder="password">
+					</li>
+					<li>
+						<input type="submit" name="submit" class="nav-btn border-success" value="Log in" style="background-color: transparent;">
+						
+					</li>
+				</ul>
+			</div>
+
+			<!-- Right side of the navigation bar -->
+			<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+
+		        <ul class="navbar-nav ml-auto">
+		            <li class="nav-item">
+		                <p><a href="#" class="nav-link text-dark">Home</a></p>
+		            </li>
+		            <li class="nav-item">
+		                <p><a href="#" class="nav-link text-dark">Wilma</a></p>
+		            </li>
+		            <li class="nav-item">
+		                <p><a href="#" class="nav-link text-dark">Reppu</a></p>
+		            </li>
+
+		            <!-- Dropdown menu -->
+		            <li class="nav-item dropdown">
+							<a href="#" class="nav-link text-dark dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Tools</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a href="#" class="dropdown-item">Lunch</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">Reppu again :)</a>
+							</div>
+						
+					</li>
+		        </ul>
+	    	</div>
+		</nav>
+	</header>
+	<!-- Navigation bar end -->
+
+<!--------------------------------------------------------------- Section one end------------------------------------------------------------>
+
+<!--------------------------------------------------------------- Section two --------------------------------------------------------------->
+	<!-- Div container -->
+	<main role="main" class="container-fluid">
+		<div class="container-fluid">
+	    	<div class="row">
+	    		<div class="col-5" style="height: 25rem;">
+	    			<ul  class="list-group">
+						<li class="list-group-item text-dark">Student number</li>
+						<li class="list-group-item">
+							<input type="text" name="StudentNumber">
+						</li>
+						<li class="list-group-item text-dark">
+							Start year
+						</li>
+						<li class="list-group-item">
+							<input type="text" name="StartYear">
+						</li>
+						<li class="list-group-item">
+							<input type="checkbox" name="Remember">
+							<label for="Remember">Remember me</label>
+						</li>
+						<li>
+							<button class="btn btn-primary" data-toggle="modal" data-target="#CheckInfo">Check</button>
+						</li>
+					</ul>
+	    		</div>
+<!--------------------------------------------------------------- Section two end------------------------------------------------------------>
+
+<!--------------------------------------------------------------- Section three ------------------------------------------------------------->
+				<div class="col-7">
+					<div class="container-fluid " id="ListedCourses">
+						<div class="row font-weight-bold">
+							<div class="col-5">Course</div>
+							<div class="col">Date of passing</div>
+							<div class="col">Grade</div>
+						</div>
+
+						<!-- Note: these are just dummy numbers, not my own :) -->
+
+						<div class="row">
+							<div class="col-5">Basics of programming</div>
+							<div class="col">3.4.209</div>
+							<div class="col">2/5</div>
+						</div>
+						<div class="row">
+							<div class="col-5">Data structure and algorithms</div>
+							<div class="col">16.2.2019</div>
+							<div class="col">5/5</div>
+						</div>
+						<div class="row">
+							<div class="col-5">Mathematics I</div>
+							<div class="col">28.1.2019</div>
+							<div class="col">4/5</div>
+						</div>
+						<div class="row">
+							<div class="col-5">Physics I</div>
+							<div class="col">28.11.2019</div>
+							<div class="col">4/5</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+			
+<!--------------------------------------------------------------- Section three end---------------------------------------------------------->
+
+<!--------------------------------------------------------------- Section four -------------------------------------------------------------->
+	<!-- info row -->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<ul  class="list-group">
+						<li class="list-item"><i>Tomi Heikkinen</i> Ⓒ 2017-2020</li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul  class="list-group">
+						<li class="list-item text-dark">Locations</li>
+						<li class="list-item text-muted"><a href="#" class="text-muted">Opistotie</a></li>
+						<li class="list-item text-muted"><a href="#" class="text-muted">Novapolis</a></li>
+						<li class="list-item text-muted"><a href="#" class="text-muted">Iisalmi</a></li>
+						<li class="list-item text-muted"><a href="#" class="text-muted">Varakaus</a></li>
+					</ul>
+				</div>
+
+				<div class="col">
+					<ul  class="list-group">
+						<li class="list-item text-dark">Tietoja</li>
+						<li class="list-item text-muted"><a href="#" class="text-muted">Contact information</a></li>
+						<li class="list-item text-muted"><a href="#" class="text-muted">GDPR</a></li>
+						<li class="list-item text-muted"><a href="#" class="text-muted">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!--------------------------------------------------------------- Section four end----------------------------------------------------------->
+
+<!--------------------------------------------------------------- Section five -------------------------------------------------------------->
+	<!-- modal for the check button -->
+	<div class="modal fade" id="CheckInfo" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+          	<h4 class="modal-title">Checking of information</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Check if the following is correct:</p>
+          </div>
+          <div class="modal-footer">
+          	<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+<!--------------------------------------------------------------- Section five end----------------------------------------------------------->
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
